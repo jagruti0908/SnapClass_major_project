@@ -12,7 +12,21 @@ def header_home():
         <div style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
             <img src="data:image/png;base64,{img_base64}" width="100" style="
                 border-radius: 20px; margin:20px;">
-            <h1 style="margin:0; padding:0; text-align:center;">SNAP</h1>
-            <h1 style="margin:0; padding:0; text-align:center;">CLASS</h1>
+            <h1 style="color:white !important;margin:0; padding:0; text-align:center;">SNAP</h1>
+            <h1 style="color:white !important;margin:0; padding:0; text-align:center;">CLASS</h1>
+        </div>
+    """, unsafe_allow_html=True)
+
+def header_dashboard():
+    img_base64 = get_image_base64("src/assets/SnapLogo.png")
+    
+    st.markdown(f"""
+        <div style="display:flex; align-items:center; justify-content:left;">
+            <img src="data:image/png;base64,{img_base64}" width="85" style="
+                border-radius: 20px; margin-right:20px;">
+            <div style="display:flex; flex-direction:column; justify-content:center;">
+                <h2 style="margin:0; padding:0; text-align:left;">SNAP</h2>
+                <h2 style="margin:0; padding:0; text-align:left;">CLASS</h2>
+            </div>
         </div>
     """, unsafe_allow_html=True)

@@ -17,7 +17,7 @@ def home_screen():
         st.image("https://i.ibb.co/844D9Lrt/mascot-student.png",width=120)
 
 
-        if st.button("Student portal",type='primary',icon=':material/arrow_outward:'):
+        if st.button("Student portal",type='primary',icon=':material/arrow_outward:',icon_position='right'):
             st.session_state['login_type']='student'
             st.rerun()
 
@@ -25,7 +25,7 @@ def home_screen():
         st.header("I'm Teacher")
         st.image("https://i.ibb.co/CsmQQV6X/mascot-prof.png", width=145)
 
-        if st.button("Teacher portal",type='primary',icon=':material/arrow_outward:'):
+        if st.button("Teacher portal",type='primary',icon=':material/arrow_outward:',icon_position='right'):
             style_background_dashboard()
             st.session_state['login_type']='teacher'
             st.rerun()
